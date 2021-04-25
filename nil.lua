@@ -63,6 +63,7 @@ return function(Info)
 	Message.Position = UDim2.new(0,0,0.194,0)
 	Message.Size = UDim2.new(1,0,0.572,0)
 	Message.TextSize = 30
+	Message.TextScaled = true
 
 	local ButtonContainer = Instance.new("Frame")
 	ButtonContainer.Parent = Popup
