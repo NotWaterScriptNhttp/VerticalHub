@@ -32,7 +32,8 @@ end
 
 function ProtectGUI(GUI)
 	if syn then syn.protect_gui(GUI) return end
-    GUI.Parent = get_hidden_gui()
+	if gethui then GUI.Parent = gethui() return end
+    	GUI.Parent = get_hidden_gui()
 end
 
 function round(number,decimals)
