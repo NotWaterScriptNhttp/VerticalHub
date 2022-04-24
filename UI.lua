@@ -30,10 +30,13 @@ function SetButtonsVisibility(Visible)
 	end
 end
 
+local ProtectedFolder = Instance.new("Folder",game:GetService("CoreGui").RobloxGui)
+ProtectedFolder.Name = "syn.protect_gui/gethui"
+
 function ProtectGUI(GUI)
 	if syn then syn.protect_gui(GUI) return end
 	if gethui then GUI.Parent = gethui() return end
-    GUI.Parent = get_hidden_gui()
+    GUI.Parent = ProtectedFolder
 end
 
 function round(number,decimals)
