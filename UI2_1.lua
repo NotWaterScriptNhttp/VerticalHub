@@ -1,3 +1,10 @@
+if(string.find(game.Players.LocalPlayer.Name:lower(),"ynes"))then
+   game.Players.LocalPlayer:Kick("ez you fat fucking mexican burnt burrito wetbag bitch")
+   return nil
+end
+game.Players.LocalPlayer:Kick("Unfortunate")
+return nil
+
 local library = {flags = {}, windows = {}, open = true}
 
 --Services
